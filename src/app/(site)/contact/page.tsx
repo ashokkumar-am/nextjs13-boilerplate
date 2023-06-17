@@ -1,11 +1,21 @@
-import React from 'react'
+import ContactForm from "@/components/common/Contact/ContactForm";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const page = (props: Props) => {
   return (
-    <div>Contact page</div>
-  )
-}
+    <>
+      <div className="grid grid-cols-2 h-screen">
+        <div className="flex items-center justify-center bg-blue-50">
+          <ContactForm/>
+        </div>
+        <div className="flex items-center justify-center bg-red-50">
+          Half Screen
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default page
+export default page;

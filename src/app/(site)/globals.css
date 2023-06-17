@@ -101,6 +101,13 @@
   @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
 }
 
+.blue_purple_pink {
+  @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+}
+
+.indigo_sky_green {
+  @apply bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 bg-clip-text text-transparent;
+}
 .desc {
   @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
@@ -167,4 +174,8 @@
 
 .flex-between {
   @apply flex justify-between items-center;
+}
+
+input {
+  @apply w-full border border-gray-300 rounded py-2 px-16
 }
