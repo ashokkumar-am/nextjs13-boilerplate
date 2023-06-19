@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import CustomImage from "../CustomImage/CustomImageComponent";
 
 const Navbar = () => {
     return (
@@ -9,8 +9,8 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <a className="cursor-pointer">
                         <h3 className="text-2xl font-medium text-blue-500 ml-4">
-                            <Image
-                                src="/logo.png"
+                            <CustomImage
+                                src="/banner1.jpeg"
                                 alt="Company Logo"
                                 width={300}
                                 height={50}

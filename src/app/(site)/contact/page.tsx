@@ -1,4 +1,5 @@
 import ContactForm from "@/components/common/Contact/ContactForm";
+import RGoogleMap from "@/components/common/GoogleMap/GoogleMap";
 import React from "react";
 
 type Props = {};
@@ -11,7 +12,10 @@ const page = (props: Props) => {
           <ContactForm/>
         </div>
         <div className="flex items-center justify-center bg-red-50">
-          Half Screen
+          <RGoogleMap center={{
+            lat: 0,
+            lng: 0
+          }} zoom={0} markers={[]}/>
         </div>
       </div>
     </>

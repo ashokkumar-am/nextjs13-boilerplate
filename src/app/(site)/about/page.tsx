@@ -1,9 +1,13 @@
+import ClientComponent from "@/components/common/Clients/ClientComponent";
 import Hero from "@/components/common/HeroBanner/Hero";
-import React from "react";
 
-type Props = {};
-
-const page = (props: Props) => {
+const page = () => {
+  const clientData = {
+    name: 'John Doe',
+    companyName: 'Example Company',
+    logo: '/banner1.jpeg',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  };
   return (
     <div className="h-80 min-h-screen">
       <div className="hero h-80">
@@ -15,6 +19,7 @@ const page = (props: Props) => {
           <button>Get Started</button>
         </Hero>
       </div>
+      <ClientComponent client={clientData} />
     </div>
   );
 };
