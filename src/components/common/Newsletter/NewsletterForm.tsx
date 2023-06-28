@@ -51,7 +51,7 @@ const NewsletterForm: React.FC = () => {
   const isSubscribed = subscriptionData?.subscribed || false;
 
   return (
-    <div className="bg-cover bg-center h-screen flex items-center glassmorphism">
+    <div className=" bg-blue-50 bg-center h-80 flex items-center ">
       <div className="w-full max-w-sm mx-auto p-4 bg-white rounded-lg shadow">
         {submitted ? (
           <p className="text-green-600 text-center mb-4">

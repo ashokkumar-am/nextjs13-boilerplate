@@ -1,10 +1,10 @@
-import { createPool } from 'mysql2/promise';
+import mysql from 'mysql2/promise';
 
-const pool = createPool({
+const connection = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: 'newpassword',
   database: 'nextjs13',
 });
 
-export default pool;
+export default connection;

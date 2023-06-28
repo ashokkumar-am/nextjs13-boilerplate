@@ -1,5 +1,8 @@
-import Footer from "@/components/admin/Footer/Footer";
-import Navbar from "@/components/admin/Navbar/Navbar";
+import "../../(site)/globals.css";
+
+import AdminFooter from "@/components/admin/Footer/AdminFooter";
+import AdminNavbar from "@/components/admin/Navbar/AdminNavbar";
+
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,9 +20,9 @@ export default function AdminLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        <AdminNavbar/>
         {children}
-        <Footer/>
+        <AdminFooter/>
         </body>
     </html>
   );

@@ -12,7 +12,7 @@ const Navbar = () => {
                             <CustomImage
                                 src="/banner1.jpeg"
                                 alt="Company Logo"
-                                width={300}
+                                width={110}
                                 height={50}
                                 priority
                             />
