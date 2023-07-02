@@ -18,7 +18,7 @@ const page = () => {
         <h1 className="indigo_sky_green text-2xl">ASHOK KUMAR A M</h1>
         
       </div>
-      <Hero
+      <Hero 
         title="Welcome to My Hero App" image={"/banner2.jpeg"}
       />
       <ClientComponent client={clientData} />

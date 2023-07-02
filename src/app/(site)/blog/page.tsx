@@ -1,3 +1,4 @@
+import ThreeColumn from "@/components/common/Blog/ThreeColumn";
 import BlogCard from "@/components/common/Blog/blogcard";
 import React from "react";
 
@@ -6,8 +7,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <div className="">
-      <div>
-        Blog page
+     
         <BlogCard
           title={"welcome"}
           description={
@@ -18,7 +18,9 @@ const page = (props: Props) => {
           blogImage={"http://via.placeholder.com/640x360"}
           href={""}
         />
-      </div>
+    <hr>
+    </hr>
+    <ThreeColumn/>
     </div>
   );
 };
