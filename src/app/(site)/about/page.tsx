@@ -1,5 +1,7 @@
 import ClientComponent from "@/components/common/Clients/ClientComponent";
-import Hero from "@/components/common/HeroBanner/Hero";
+import CustomImage from "@/components/common/CustomImage/CustomImageComponent";
+import Hero from "@/components/common/Hero/Hero";
+
 
 const page = () => {
   const clientData = {
@@ -14,11 +16,11 @@ const page = () => {
         <h1 className="green_gradient text-5xl">Welcome to About Page</h1>
         <h1 className="blue_purple_pink text-4xl ">SARAH DEEKSHA </h1>
         <h1 className="indigo_sky_green text-2xl">ASHOK KUMAR A M</h1>
-        <Hero backgroundImage="/banner1.jpeg">
-          <h2>Discover amazing content.</h2>
-          <button>Get Started</button>
-        </Hero>
+        
       </div>
+      <Hero
+        title="Welcome to My Hero App" image={"/banner2.jpeg"}
+      />
       <ClientComponent client={clientData} />
     </div>
   );
